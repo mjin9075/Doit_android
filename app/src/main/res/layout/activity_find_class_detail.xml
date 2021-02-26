@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FindClassDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/FCD_f_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="업체명"
+        android:textSize="23sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_weight="9"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="83">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/FCD_f_img"
+                android:layout_width="310dp"
+                android:layout_height="310dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:adjustViewBounds="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/FCD_f_intro"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:lines="10"
+                android:minLines="1"
+                android:maxLines="50"
+                android:scrollbars="vertical"
+                android:text="소개"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="운영시간"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cobaltBlue"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/FCD_f_bh"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:lines="4"
+                android:minLines="1"
+                android:maxLines="5"
+                android:scrollbars="vertical"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="편의시설"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cobaltBlue"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/FCD_f_con"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:lines="6"
+                android:maxLines="10"
+                android:minLines="1"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:textSize="20sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="기타"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cobaltBlue"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/FCD_f_etc"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:lines="4"
+                android:minLines="1"
+                android:maxLines="5"
+                android:scrollbars="vertical"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="위치"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cobaltBlue"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/FCD_f_add"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="5dp"/>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/FCD_f_map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".FindClassDetail"/>
+
+                <ImageView
+                    android:id="@+id/FCD_f_map_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/FCD_f_goChat"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:text="문의하기"
+        android:layout_margin ="5dp"
+        android:layout_gravity="center"
+        android:layout_weight="8"/>
+
+</LinearLayout>

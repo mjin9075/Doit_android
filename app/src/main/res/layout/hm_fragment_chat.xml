@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HmChatFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="쳇쳇" />-->
+<!--    <Button-->
+<!--        android:id="@+id/go_map"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="지도로"-->
+<!--        android:layout_marginTop="130dp"/>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="고객 상담 내역"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/noChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="상담을 요청한 사용자가 없습니다."
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hm_chatList_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:listitem="@layout/item_hm_chatlist"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical"
+            android:layout_weight="9"/>
+<!--        <Button-->
+<!--            android:id="@+id/go_client_aa"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="채팅aaa" />-->
+<!--        <Button-->
+<!--            android:id="@+id/go_client_bb"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="채팅bbb" />-->
+    </LinearLayout>
+
+
+</FrameLayout>

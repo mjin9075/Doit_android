@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Recommend_result">
+
+
+    <TextView
+        android:id="@+id/rec_result"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="바로바로"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/rec_result2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="추천결과"
+        android:padding="5dp"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/rec_result_explanation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="설명"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="0">
+        <Button
+            android:id="@+id/findClassButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="클래스찾기"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/rec_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="다음"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

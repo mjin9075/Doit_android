@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".User_choice_like">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="좋아요 (경험해봤던것중 선택)"
+        android:textSize="23sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+            <TextView
+                android:id="@+id/martialArts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="무술"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="7dp">
+
+                <TextView
+                    android:id="@+id/umartialArts2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="복싱_킥복싱"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/umartialArts3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="무에타이"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/umartialArts4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="시스테마"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="7dp">
+
+                <TextView
+                    android:id="@+id/umartialArts5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="유도"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/umartialArts6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="주짓수"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/umartialArts7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="카포에라"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/umartialArts8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="크라브마가"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="7dp">
+
+                <TextView
+                    android:id="@+id/umartialArts9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="태권도"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/umartialArts10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="택견"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/umartialArts11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="합기도"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/ballGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구기스포츠"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="7dp">
+
+                <TextView
+                    android:id="@+id/uballGame1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="골프"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/uballGame2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="농구"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/uballGame3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="당구_포켓볼"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/uballGame4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="볼링"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="7dp">
+
+                <TextView
+                    android:id="@+id/uballGame5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="축구"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/racketSports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="라켓스포츠"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="7dp">
+
+                <TextView
+                    android:id="@+id/uracketSports1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="배드민턴"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/uracketSports2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="스쿼시"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/uracketSports3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="탁구"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/uracketSports4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="테니스"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/extremeSports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="익스트림스포츠"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/uextremeSports1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="스케이트보드_롱보드"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/uextremeSports2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="인라인스케이트"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/uextremeSports3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="클라이밍"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/uextremeSports4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="트릭킹"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/waterSports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수상스포츠"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/uwaterSports1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="딩기요트"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/uwaterSports2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="서핑"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/uwaterSports3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="수영"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/uwaterSports4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="수상스키_웨이크보드"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/uwaterSports5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="윈드서핑"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/uwaterSports6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="프리다이빙"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/uwaterSports7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="패들보드"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/etcSports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기타"
+                android:textColor="@color/colorGray"
+                android:textSize="16sp"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="7dp">
+
+                <TextView
+                    android:id="@+id/uetcSports1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="발레"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/uetcSports2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="사격"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/uetcSports3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="승마"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/uetcSports4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="양궁"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/uetcSports5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="요가"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="7dp">
+
+                <TextView
+                    android:id="@+id/uetcSports6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="저글링"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/uetcSports7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="폴댄스"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/uetcSports8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="필라테스"
+                    android:textColor="@color/colorGray"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+<Button
+    android:id="@+id/uchoiceLike_next"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:text="다음" />
+
+</LinearLayout>

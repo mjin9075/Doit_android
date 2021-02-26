@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sportsRecommend"
+        android:icon="@drawable/ic_content_paste_black_24dp"
+        android:title="운동추천"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/findClass"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="클래스찾기"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/chatList"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="문의내역"
+        android:enabled="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/user"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="내정보" />
+
+<!--    <item-->
+<!--        android:id="@+id/more"-->
+<!--        app:showAsAction="ifRoom"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_more_horiz_black_24dp"-->
+<!--        android:title="더보기" />-->
+
+
+
+</menu>

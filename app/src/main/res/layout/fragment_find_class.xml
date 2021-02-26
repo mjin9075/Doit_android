@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/findClass_edt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="클래스찾기"
+                android:textSize="20sp"
+                android:layout_weight="0"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/findClass_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:listitem="@layout/item_find_class"
+                android:scrollbarFadeDuration="0"
+                android:scrollbarSize="5dp"
+                android:scrollbarThumbVertical="@android:color/darker_gray"
+                android:scrollbars="vertical"
+                android:layout_weight="9"/>
+
+        </LinearLayout>
+</FrameLayout>

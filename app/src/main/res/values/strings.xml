@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">doit</string>
+    //카카오 앱 키
+    <string name="kakao_app_key">2d662b15dcdfc25f97ce7e90199fa40d</string>
+
+    //구글맵API KEY
+    <string name="google_map_key">AIzaSyAYjjFLiLfcUGp01WhG3vXOpvnUjhOSqEQ</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main3">Main3Activity</string>
+
+
+    <string-array name="spinner_1">
+        <item>대분류</item>
+        <item>무술</item>
+        <item>구기</item>
+        <item>라켓</item>
+        <item>익스트림</item>
+        <item>수상</item>
+        <item>기타종목</item>
+    </string-array>
+
+    <string-array name="category_small">
+        <item>소분류</item>
+    </string-array>
+
+    <string-array name="spinner_1_matial">
+        <item>소분류</item>
+        <item>복싱_킥복싱</item>
+        <item>무에타이</item>
+        <item>시스테마</item>
+        <item>유도</item>
+        <item>주짓수</item>
+        <item>카포에라</item>
+        <item>크라브마가</item>
+        <item>태권도</item>
+        <item>택견</item>
+        <item>합기도</item>
+    </string-array>
+    <string-array name="spinner_1_ball">
+        <item>소분류</item>
+        <item>골프</item>
+        <item>농구</item>
+        <item>당구_포켓볼</item>
+        <item>볼링</item>
+        <item>축구</item>
+    </string-array>
+    <string-array name="spinner_1_raket">
+        <item>소분류</item>
+        <item>배드민턴</item>
+        <item>스쿼시</item>
+        <item>탁구</item>
+        <item>테니스</item>
+    </string-array>
+    <string-array name="spinner_1_ext">
+        <item>소분류</item>
+        <item>스케이트보드_롱보드</item>
+        <item>인라인스케이트</item>
+        <item>클라이밍</item>
+        <item>트릭킹</item>
+    </string-array>
+    <string-array name="spinner_1_water">
+        <item>소분류</item>
+        <item>딩기요트</item>
+        <item>서핑</item>
+        <item>수영</item>
+        <item>수상스키_웨이크보드</item>
+        <item>윈드서핑</item>
+        <item>프리다이빙</item>
+        <item>패들보드</item>
+    </string-array>
+    <string-array name="spinner_1_etc">
+        <item>소분류</item>
+        <item>발레</item>
+        <item>사격</item>
+        <item>승마</item>
+        <item>양궁</item>
+        <item>요가</item>
+        <item>저글링</item>
+        <item>폴댄스</item>
+        <item>필라테스</item>
+    </string-array>
+
+</resources>

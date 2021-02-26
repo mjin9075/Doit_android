@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <receiver
+            android:name=".Svc_receiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+        <service
+            android:name=".Svc_RestartService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Svc_MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".Svc_AlarmReceiver" />
+
+        <activity android:name=".HM_Chat" />
+        <activity android:name=".GM_Chat"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Activity.Main2Activity" />
+        <activity android:name=".FindClassDetail" />
+        <activity android:name=".Activity.TTTest" />
+        <activity android:name=".ImgTest" />
+        <activity android:name=".DaumWebViewActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".Hm_facility_register" />
+        <activity android:name=".Hm_MainActivity" />
+        <activity android:name=".User_changePassword" />
+        <activity android:name=".User_preference_survey" />
+        <activity android:name=".User_choice_dislike" />
+        <activity android:name=".User_choice_like" />
+        <activity android:name=".Recommend_result" />
+        <activity android:name=".Choice_like" />
+        <activity android:name=".Choice_dislike" />
+        <activity android:name=".Test_result" />
+        <activity android:name=".Test_3" />
+        <activity android:name=".Test_2" />
+        <activity android:name=".Test_1" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".AccessTerms">
+            <intent-filter>
+                <data
+                    android:host="access_terms"
+                    android:scheme="doit" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.doit"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

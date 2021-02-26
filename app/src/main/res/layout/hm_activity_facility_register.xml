@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hm_facility_register"
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="시설등록"
+        android:textSize="23sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/hm_facility_IMG"
+                android:layout_width="310dp"
+                android:layout_height="310dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_add_a_photo_black_24dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="업종"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cobaltBlue"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+
+                <Spinner
+                    android:id="@+id/spinner_1_category"
+                    android:layout_width="120dp"
+                    android:layout_height="23dp"
+                    android:layout_weight="0.4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"/>
+
+                <Spinner
+                    android:id="@+id/spinner_2_category"
+                    android:layout_width="120dp"
+                    android:layout_height="23dp"
+                    android:layout_weight="0.4"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="업체명"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cobaltBlue"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:id="@+id/facility_name"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="업체명을 입력하세요"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="운영시간"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cobaltBlue"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/facility_business_hours"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="ex)[평일] 09:00 ~ 23:00\n      [휴관일]공휴일, 매주일요일"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:minLines="1"
+                android:maxLines="4"
+                android:scrollbars="vertical"
+                android:gravity="top|left"/>
+
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="편의시설"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cobaltBlue"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/facility_convenience"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="top|left"
+                android:hint="ex)\n유료:\n개인라커(월3,000원)\n무료:\n주차가능, 샤워시설,  수건"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:maxLines="10"
+                android:minLines="1"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="기타"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cobaltBlue"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/facility_etc"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="ex)기타 참고사항"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:minLines="1"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:gravity="top|left"/>
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="소개"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cobaltBlue"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/facility_intro"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="업체소개글을 입력하세요"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:inputType="textMultiLine"
+                android:lines="10"
+                android:minLines="1"
+                android:maxLines="50"
+                android:scrollbars="vertical"
+                android:gravity="top|left"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="장소"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/cobaltBlue"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"/>
+
+<!--                <LinearLayout-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="310dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="      장소"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="@color/cobaltBlue"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center"/>-->
+
+
+<!--                    <Button-->
+<!--                        android:id="@+id/search_place"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="장소검색"-->
+<!--                        android:padding="0dp"-->
+<!--                        android:layout_weight="3.5"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <fragment-->
+<!--                    android:id="@+id/map"-->
+<!--                    android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="300dp"-->
+<!--                    tools:context=".MapsActivity"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginBottom="15dp"/>-->
+
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.7"
+                    android:text="주소 : "
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/facility_receive_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:padding="5dp"/>
+
+
+                <Button
+                    android:id="@+id/search_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="주소검색"
+                    android:padding="0dp"
+                    android:layout_weight="2.4"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:text="상세주소 : "
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/facility_detailed_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="상세주소를 입력하세요"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:maxLines="3"
+                    android:paddingStart="5dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/facility_registerButton"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimary"
+                android:text="등록하기"
+                android:layout_margin ="20dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
